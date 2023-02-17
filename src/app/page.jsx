@@ -1,6 +1,7 @@
 import Image from "next/image"
 import raymart from "../../public/images/raymart.png"
 import blacklogo from "../../public/images/blacklogo.png"
+import wave from "../../public/images/wave.gif"
 
 export default function Home() {
   return (
@@ -41,9 +42,18 @@ export default function Home() {
       {/* Hero section */}
       <div className="container-lg shadow">
         <div className="row d-flex align-items-center bg-light pt-5">
-          <div className="col-md-6 col-12">
+          <div className="col-md-6 col-12 ">
             <div className="text-center">
-              <h1 className="fw-bold">Hi There 🖐🏻, <br />
+
+              <h1 className="fw-bold">Hi There,
+                <Image className="img-fluid mb-0 ms-2 align-top "
+                  src={wave}
+                  alt="waving hand"
+                  width={45}
+                  height={45}
+                />
+
+                <br />
                 I'm Raymart Vergara</h1>
               <h3>Soon to be Web Developer</h3>
               <button className="btn btn-dark px-3 py-2 mt-3 mx-2"><span className="h5 hfw-bold">About</span> </button>
@@ -141,7 +151,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container">
-      <h1 className="border-start border-5 border-dark ps-4 mb-3">Education</h1>
+        <h1 className="border-start border-5 border-dark ps-4 mb-3">Education</h1>
         <div className="row"></div>
       </div>
     </main>
