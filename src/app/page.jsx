@@ -6,7 +6,6 @@ import wave from "../../public/images/wave.gif"
 export default function Home() {
   return (
     <main>
-
       <nav className="navbar navbar-expand-lg bg-white">
         <div className="container-lg">
           <a className="navbar-brand" href="#">
@@ -44,7 +43,6 @@ export default function Home() {
         <div className="row d-flex align-items-center bg-light pt-5">
           <div className="col-md-6 col-12 ">
             <div className="text-center">
-
               <h1 className="fw-bold">Hi There,
                 <Image className="img-fluid mb-0 ms-2 align-top "
                   src={wave}
@@ -72,11 +70,76 @@ export default function Home() {
         </div>
       </div>
       {/* about me */}
-      <div className="container-lg pt-5">
+      <div className="container-lg pt-5 ps-0">
         <h1 className="border-start border-5 border-dark ps-4"> About Me</h1>
         <div className="row">
           <div className="col">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illum tempora voluptates magnam aut pariatur fugiat minus quas, molestiae est explicabo quos. Numquam voluptates optio pariatur similique hic aut sit?</p>
+          </div>
+        </div>
+      </div>
+      <div className="container-lg ps-0">
+        <h1 className="border-start border-5 border-dark ps-4">My Skills</h1>
+        <div className="row">
+          <div className="col">
+            <p className="ms-3">Here are the technology stacks that I have learned since  I started studying in KodeGo bootcamp.</p>
+            <div className="col p-1">
+              <div className="row">
+              <h5 className="my-3">Framework</h5>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>React Js</span> </button>
+                </div>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>Next Js</span></button>
+                </div>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>Laravel v9</span></button>
+                </div>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>Bootstrap</span></button>
+                </div>
+              </div>
+
+              <div className="row">
+              <h5 className="my-3">Front End</h5>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>HTML 5</span> </button>
+                </div>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>CSS</span></button>
+                </div>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>Javascript</span></button>
+                </div>
+              </div>
+
+              <div className="row">
+              <h5 className="my-3">Back End</h5>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>PHP</span> </button>
+                </div>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>Firebase</span></button>
+                </div>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>MySQL</span></button>
+                </div>
+              </div>
+
+            
+              <div className="row">
+              <h5 className="my-3">Others</h5>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>GitHub</span> </button>
+                </div>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>Git</span></button>
+                </div>
+                <div className="col-md-2">
+                  <button className="btn btn-dark"><span>Figma</span></button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -149,10 +212,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="container">
-        <h1 className="border-start border-5 border-dark ps-4 mb-3">Education</h1>
-        <div className="row"></div>
       </div>
     </main>
   )
