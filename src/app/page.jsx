@@ -74,7 +74,7 @@ export default function Home() {
       <div className="container-lg pt-5 mb-5">
         <h1 className="border-start border-5 border-dark ps-4 mb-3"> Projects</h1>
         <div className="row g-3">
-          <div className="col-6">
+          <div className="col-6 col-12 col-md-6">
             <div class="card shadow">
               <div class="row g-0">
                 <div class="col-md-6">
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <div class="card shadow">
               <div class="row g-0">
                 <div class="col-md-6">
@@ -106,7 +106,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <div class="card shadow">
               <div class="row g-0">
                 <div class="col-md-6">
@@ -122,7 +122,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-6 col-12 col-md-6">
             <div class="card shadow">
               <div class="row g-0">
                 <div class="col-md-6">
