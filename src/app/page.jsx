@@ -2,45 +2,31 @@ import Image from "next/image"
 import raymart from "../../public/images/raymart.png"
 import blacklogo from "../../public/images/blacklogo.png"
 import wave from "../../public/images/wave.gif"
+import Link from "next/link"
 
 export default function Home() {
   return (
     <main>
-      <nav className="navbar navbar-expand-lg bg-white">
-        <div className="container-lg">
-          <a className="navbar-brand" href="#">
-            <Image className="img-fluid"
+
+      {/* <Image className="img-fluid"
               src={blacklogo}
               alt="Picture of the author"
               width={50}
               height={50}
               placeholder="blur"
-            />
-          </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav text-center  mx-auto">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Projects</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Education</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+            /> */}
+
+<nav class="navbar bg-dark" data-bs-theme="dark">
+<h1>asda</h1>
+</nav>
+
+
+
+
+
       {/* Hero section */}
       <div className="container-lg shadow">
-        <div className="row d-flex align-items-center bg-light pt-5">
+        <div className="row d-flex align-items-center bg-light pt-5" id="home">
           <div className="col-md-6 col-12 ">
             <div className="text-center">
               <h1 className="fw-bold">Hi There,
@@ -71,7 +57,7 @@ export default function Home() {
       </div>
       {/* about me */}
       <div className="container-lg pt-5 ps-0">
-        <h1 className="border-start border-5 border-dark ps-4"> About Me</h1>
+        <h1 className="border-start border-5 border-dark ps-4" id="aboutme"> About Me</h1>
         <div className="row">
           <div className="col">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illum tempora voluptates magnam aut pariatur fugiat minus quas, molestiae est explicabo quos. Numquam voluptates optio pariatur similique hic aut sit?</p>
@@ -79,13 +65,13 @@ export default function Home() {
         </div>
       </div>
       <div className="container-lg ps-0">
-        <h1 className="border-start border-5 border-dark ps-4">My Skills</h1>
+        <h1 className="border-start border-5 border-dark ps-4" id="skills">My Skills</h1>
         <div className="row">
           <div className="col">
             <p className="ms-3">Here are the technology stacks that I have learned since  I started studying in KodeGo bootcamp.</p>
             <div className="col p-1">
               <div className="row">
-              <h5 className="my-3">Framework</h5>
+                <h5 className="my-3">Framework</h5>
                 <div className="col-md-2">
                   <button className="btn btn-dark"><span>React Js</span> </button>
                 </div>
@@ -101,7 +87,7 @@ export default function Home() {
               </div>
 
               <div className="row">
-              <h5 className="my-3">Front End</h5>
+                <h5 className="my-3">Front End</h5>
                 <div className="col-md-2">
                   <button className="btn btn-dark"><span>HTML 5</span> </button>
                 </div>
@@ -114,7 +100,7 @@ export default function Home() {
               </div>
 
               <div className="row">
-              <h5 className="my-3">Back End</h5>
+                <h5 className="my-3">Back End</h5>
                 <div className="col-md-2">
                   <button className="btn btn-dark"><span>PHP</span> </button>
                 </div>
@@ -126,9 +112,9 @@ export default function Home() {
                 </div>
               </div>
 
-            
+
               <div className="row">
-              <h5 className="my-3">Others</h5>
+                <h5 className="my-3">Others</h5>
                 <div className="col-md-2">
                   <button className="btn btn-dark"><span>GitHub</span> </button>
                 </div>
@@ -145,7 +131,7 @@ export default function Home() {
       </div>
       {/* Projects */}
       <div className="container-lg pt-5 mb-5">
-        <h1 className="border-start border-5 border-dark ps-4 mb-3"> Projects</h1>
+        <h1 className="border-start border-5 border-dark ps-4 mb-3" id="projects">Projects</h1>
         <div className="row g-3">
           <div className="col-6 col-12 col-md-6">
             <div class="card shadow">
