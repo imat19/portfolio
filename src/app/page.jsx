@@ -1,28 +1,41 @@
 import Image from "next/image"
 import raymart from "../../public/images/raymart.png"
-import blacklogo from "../../public/images/blacklogo.png"
+import whitelogo from "../../public/images/whitelogo.png"
 import wave from "../../public/images/wave.gif"
 import Link from "next/link"
 
+
 export default function Home() {
   return (
+
     <main>
-
-      {/* <Image className="img-fluid"
-              src={blacklogo}
-              alt="Picture of the author"
-              width={50}
-              height={50}
-              placeholder="blur"
-            /> */}
-
-<nav class="navbar bg-dark" data-bs-theme="dark">
-<h1>asda</h1>
-</nav>
-
-
-
-
+        <nav class="navbar bg-dark" data-bs-theme="dark" id="home">
+          <Image className="img-fluid"
+            src={whitelogo}
+            alt="Picture of the author"
+            width={50}
+            height={50}
+            placeholder="blur"
+            id="home"
+          />
+          <div className="col text-center">
+          <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#aboutme">ABOUT</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#projects">PROJECTS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contact">CONTACT</a>
+  </li>
+</ul>
+          </div>
+        </nav>
+    
 
       {/* Hero section */}
       <div className="container-lg shadow">
@@ -60,7 +73,7 @@ export default function Home() {
         <h1 className="border-start border-5 border-dark ps-4" id="aboutme"> About Me</h1>
         <div className="row">
           <div className="col">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illum tempora voluptates magnam aut pariatur fugiat minus quas, molestiae est explicabo quos. Numquam voluptates optio pariatur similique hic aut sit?</p>
+            <p>As a junior Web Developer, I am a tech enthusiast who is passionate about creating user-friendly and visually appealing websites. I have a strong foundation in programming languages such as HTML, CSS, PHP, and JavaScript, and I am constantly updating my skills to keep up with the latest web development trends and technologies.</p>
           </div>
         </div>
       </div>
@@ -76,16 +89,12 @@ export default function Home() {
                   <button className="btn btn-dark"><span>React Js</span> </button>
                 </div>
                 <div className="col-md-2">
-                  <button className="btn btn-dark"><span>Next Js</span></button>
-                </div>
-                <div className="col-md-2">
                   <button className="btn btn-dark"><span>Laravel v9</span></button>
                 </div>
                 <div className="col-md-2">
                   <button className="btn btn-dark"><span>Bootstrap</span></button>
                 </div>
               </div>
-
               <div className="row">
                 <h5 className="my-3">Front End</h5>
                 <div className="col-md-2">
@@ -111,8 +120,6 @@ export default function Home() {
                   <button className="btn btn-dark"><span>MySQL</span></button>
                 </div>
               </div>
-
-
               <div className="row">
                 <h5 className="my-3">Others</h5>
                 <div className="col-md-2">
@@ -198,7 +205,31 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="container-lg pt-5 ps-0">
+          <h1 className="border-start border-5 border-dark ps-4" id="contact"> Contact Me</h1>
+          <div className="row">
+            <div className="col">
+              <form id="" action="https://formspree.io/f/xdovzbrg" method="POST">
+                <label for="email" className="form-label">Email address <span className="text-danger">*</span></label>
+                <input className="form-control" name="Email" id="email" type="email" required />
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <label for="email" className="form-label">Fullname  <span className="text-danger">*</span></label>
+                <div className="row">
+                  <div className="col-md-6 mb-3">
+                    <input className="form-control" name="firstName" id="firstName" type="text" placeholder="Firstname" required />
+                  </div>
+                  <div className="col-md-6 mb-3">
+                    <input className="form-control" name="lastName" id="lastName" type="text" placeholder="Lastname" required />
+                  </div>
+                </div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button className="btn btn-dark" type="submit" pattern="[A-Za-z]">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   )
+
 }
